@@ -1,0 +1,208 @@
+{
+  "encoder_errors": [
+    {
+      "sentence": "resrv 6 recliner seats in kochi please",
+      "gold_intent": "book_ticket",
+      "pred_intent": "search_movie",
+      "gold_entities": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-NUM_TICKETS",
+        "B-SEAT_TYPE",
+        "O",
+        "O",
+        "B-CITY",
+        "O"
+      ],
+      "pred_entities": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-NUM_TICKETS",
+        "B-SEAT_TYPE",
+        "O",
+        "O",
+        "B-CITY",
+        "O"
+      ],
+      "reason": "intent misclassification"
+    },
+    {
+      "sentence": "hey thlre",
+      "gold_intent": "greeting",
+      "pred_intent": "goodbye",
+      "gold_entities": [
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "pred_entities": [
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "reason": "intent misclassification"
+    },
+    {
+      "sentence": "can u where is my tkt for this weekend now",
+      "gold_intent": "check_booking_status",
+      "pred_intent": "unknown",
+      "gold_entities": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-DATE",
+        "I-DATE"
+      ],
+      "pred_entities": [],
+      "reason": "adversarial noise exposed encoder fragility"
+    },
+    {
+      "sentence": "show me showtime for leo on 27 may quick",
+      "gold_intent": "check_showtime",
+      "pred_intent": "unknown",
+      "gold_entities": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-MOVIE_NAME",
+        "O",
+        "B-DATE",
+        "I-DATE"
+      ],
+      "pred_entities": [],
+      "reason": "adversarial noise exposed encoder fragility"
+    },
+    {
+      "sentence": "that's all thanks now",
+      "gold_intent": "goodbye",
+      "pred_intent": "unknown",
+      "gold_entities": [
+        "O",
+        "O",
+        "O"
+      ],
+      "pred_entities": [],
+      "reason": "adversarial noise exposed encoder fragility"
+    }
+  ],
+  "llm_errors": [
+    {
+      "sentence": "pick recliner seats near b7",
+      "gold_intent": "select_seat",
+      "pred_intent": "book_ticket",
+      "gold_entities": [
+        "O",
+        "B-SEAT_TYPE",
+        "O",
+        "O",
+        "B-SEAT_NUMBER"
+      ],
+      "pred_entities": {
+        "SEAT_TYPE": "recliner",
+        "SEAT_NUMBER": "B7"
+      },
+      "raw_output": "{\"intent\": \"book_ticket\", \"entities\": {\"SEAT_TYPE\": \"recliner\", \"SEAT_NUMBER\": \"B7\"}}",
+      "reason": "intent mismatch or missing span"
+    },
+    {
+      "sentence": "i want b12 for the show",
+      "gold_intent": "select_seat",
+      "pred_intent": "check_showtime",
+      "gold_entities": [
+        "O",
+        "O",
+        "B-SEAT_NUMBER",
+        "O",
+        "O",
+        "O"
+      ],
+      "pred_entities": {
+        "SEAT_NUMBER": "B12",
+        "NUM_TICKETS": "1"
+      },
+      "raw_output": "{\"intent\": \"check_showtime\", \"entities\": {\"SEAT_NUMBER\": \"B12\", \"NUM_TICKETS\": \"1\"}}",
+      "reason": "intent mismatch or missing span"
+    },
+    {
+      "sentence": "give me balcony around c3",
+      "gold_intent": "select_seat",
+      "pred_intent": "search_movie",
+      "gold_entities": [
+        "O",
+        "O",
+        "B-SEAT_TYPE",
+        "O",
+        "B-SEAT_NUMBER"
+      ],
+      "pred_entities": {
+        "SEAT_TYPE": "balcony",
+        "SEAT_NUMBER": "C3",
+        "NUM_TICKETS": "3"
+      },
+      "raw_output": "{\"intent\": \"search_movie\", \"entities\": {\"SEAT_TYPE\": \"balcony\", \"SEAT_NUMBER\": \"C3\", \"NUM_TICKETS\": \"3\"}}",
+      "reason": "intent mismatch or missing span"
+    },
+    {
+      "sentence": "i want to cancel tickets for avatar the way of water today",
+      "gold_intent": "cancel_ticket",
+      "pred_intent": "book_ticket",
+      "gold_entities": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-MOVIE_NAME",
+        "I-MOVIE_NAME",
+        "I-MOVIE_NAME",
+        "I-MOVIE_NAME",
+        "I-MOVIE_NAME",
+        "O"
+      ],
+      "pred_entities": {
+        "MOVIE_NAME": "Avatar The Way of Water",
+        "DATE": "today"
+      },
+      "raw_output": "{\"intent\": \"book_ticket\", \"entities\": {\"MOVIE_NAME\": \"Avatar The Way of Water\", \"DATE\": \"today\"}}",
+      "reason": "intent mismatch or missing span"
+    },
+    {
+      "sentence": "um please buk me 3 for kalki 2898 ad at 11 : 30 am",
+      "gold_intent": "book_ticket",
+      "pred_intent": "search_movie",
+      "gold_entities": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-NUM_TICKETS",
+        "O",
+        "B-MOVIE_NAME",
+        "I-MOVIE_NAME",
+        "I-MOVIE_NAME",
+        "O",
+        "B-TIME",
+        "I-TIME",
+        "I-TIME",
+        "I-TIME"
+      ],
+      "pred_entities": {
+        "MOVIE_NAME": "Kalki 2898 AD",
+        "NUM_TICKETS": "1",
+        "TIME": "30 am"
+      },
+      "raw_output": "{\"intent\": \"search_movie\", \"entities\": {\"MOVIE_NAME\": \"Kalki 2898 AD\", \"NUM_TICKETS\": \"1\", \"TIME\": \"30 am\"}}",
+      "reason": "intent mismatch or missing span"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "encoder_adversarial_intent_accuracy": 0.2,
+  "llm_adversarial_intent_accuracy": 0.05
+}

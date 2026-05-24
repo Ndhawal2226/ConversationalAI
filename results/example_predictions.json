@@ -1,0 +1,34 @@
+{
+  "examples": [
+    {
+      "sentence": "show me showtimes for barbie on 27 may",
+      "gold_intent": "check_showtime",
+      "encoder_intent": "check_showtime",
+      "llm_intent": "check_showtime"
+    },
+    {
+      "sentence": "pick recliner seats near b7",
+      "gold_intent": "select_seat",
+      "encoder_intent": "select_seat",
+      "llm_intent": "book_ticket"
+    },
+    {
+      "sentence": "yo",
+      "gold_intent": "greeting",
+      "encoder_intent": "greeting",
+      "llm_intent": "greeting"
+    },
+    {
+      "sentence": "goodbye",
+      "gold_intent": "goodbye",
+      "encoder_intent": "goodbye",
+      "llm_intent": "goodbye"
+    },
+    {
+      "sentence": "i want b12 for the show",
+      "gold_intent": "select_seat",
+      "encoder_intent": "select_seat",
+      "llm_intent": "check_showtime"
+    }
+  ]
+}

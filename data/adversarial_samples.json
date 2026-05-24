@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "can u where is my tkt for this weekend now",
+    "intent": "check_booking_status",
+    "tokens": "[\"can u\", \"where\", \"is\", \"my\", \"tkt\", \"for\", \"this\", \"weekend\", \"now\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"O\", \"B-DATE\", \"I-DATE\"]"
+  },
+  {
+    "sentence": "show me showtime for leo on 27 may quick",
+    "intent": "check_showtime",
+    "tokens": "[\"show\", \"me\", \"showtime\", \"for\", \"leo\", \"on\", \"27\", \"may\", \"quick\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"B-MOVIE_NAME\", \"O\", \"B-DATE\", \"I-DATE\"]"
+  },
+  {
+    "sentence": "that's all thanks now",
+    "intent": "goodbye",
+    "tokens": "[\"that's\", \"all\", \"thanks\", \"now\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\"]"
+  },
+  {
+    "sentence": "hey hey plz buk me 1 for dune part two at 11 : 30 am",
+    "intent": "book_ticket",
+    "tokens": "[\"hey\", \"hey\", \"plz\", \"buk\", \"me\", \"1\", \"for\", \"dune\", \"part\", \"two\", \"at\", \"11\", \":\", \"30\", \"am\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"B-NUM_TICKETS\", \"O\", \"B-MOVIE_NAME\", \"I-MOVIE_NAME\", \"I-MOVIE_NAME\", \"O\", \"B-TIME\", \"I-TIME\", \"I-TIME\", \"I-TIME\"]"
+  },
+  {
+    "sentence": "can u sllect seat a10",
+    "intent": "select_seat",
+    "tokens": "[\"can u\", \"sllect\", \"seat\", \"a10\"]",
+    "BIO_tags": "[\"O\", \"O\", \"B-SEAT_NUMBER\"]"
+  },
+  {
+    "sentence": "hey yo",
+    "intent": "greeting",
+    "tokens": "[\"hey\", \"yo\"]",
+    "BIO_tags": "[\"O\"]"
+  },
+  {
+    "sentence": "yo drop my reservatin at inox city center",
+    "intent": "cancel_ticket",
+    "tokens": "[\"yo\", \"drop\", \"my\", \"reservatin\", \"at\", \"inox\", \"city\", \"center\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"O\", \"B-THEATER_NAME\", \"I-THEATER_NAME\", \"I-THEATER_NAME\"]"
+  },
+  {
+    "sentence": "uh yo now",
+    "intent": "greeting",
+    "tokens": "[\"uh\", \"yo\", \"now\"]",
+    "BIO_tags": "[\"O\"]"
+  },
+  {
+    "sentence": "show me dun part two sessions in delhi",
+    "intent": "search_movie",
+    "tokens": "[\"show\", \"me\", \"dun\", \"part\", \"two\", \"sessions\", \"in\", \"delhi\"]",
+    "BIO_tags": "[\"O\", \"O\", \"B-MOVIE_NAME\", \"I-MOVIE_NAME\", \"I-MOVIE_NAME\", \"O\", \"O\", \"B-CITY\"]"
+  },
+  {
+    "sentence": "pls buk 1 vip tix for dune part two at raj mandir quick",
+    "intent": "book_ticket",
+    "tokens": "[\"pls\", \"buk\", \"1\", \"vip\", \"tix\", \"for\", \"dune\", \"part\", \"two\", \"at\", \"raj\", \"mandir\", \"quick\"]",
+    "BIO_tags": "[\"O\", \"O\", \"B-NUM_TICKETS\", \"B-SEAT_TYPE\", \"O\", \"O\", \"B-MOVIE_NAME\", \"I-MOVIE_NAME\", \"I-MOVIE_NAME\", \"O\", \"B-THEATER_NAME\", \"I-THEATER_NAME\"]"
+  },
+  {
+    "sentence": "please refun my booking for this evenin",
+    "intent": "cancel_ticket",
+    "tokens": "[\"please\", \"refun\", \"my\", \"booking\", \"for\", \"this\", \"evenin\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"O\", \"B-DATE\", \"I-DATE\"]"
+  },
+  {
+    "sentence": "check my bookin status for jawan quick",
+    "intent": "check_booking_status",
+    "tokens": "[\"check\", \"my\", \"bookin\", \"status\", \"for\", \"jawan\", \"quick\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"O\", \"B-MOVIE_NAME\"]"
+  },
+  {
+    "sentence": "yo sho me avatar the way of water sessions in jaipur",
+    "intent": "search_movie",
+    "tokens": "[\"yo\", \"sho\", \"me\", \"avatar\", \"the\", \"way\", \"of\", \"water\", \"sessions\", \"in\", \"jaipur\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"B-MOVIE_NAME\", \"I-MOVIE_NAME\", \"I-MOVIE_NAME\", \"I-MOVIE_NAME\", \"I-MOVIE_NAME\", \"O\", \"O\", \"B-CITY\"]"
+  },
+  {
+    "sentence": "wha mbvies like oppenheimer are running in delh",
+    "intent": "search_movie",
+    "tokens": "[\"wha\", \"mbvies\", \"like\", \"oppenheimer\", \"are\", \"running\", \"in\", \"delh\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"B-MOVIE_NAME\", \"O\", \"O\", \"O\", \"B-CITY\"]"
+  },
+  {
+    "sentence": "yo pick relular seats near e15",
+    "intent": "select_seat",
+    "tokens": "[\"yo\", \"pick\", \"relular\", \"seats\", \"near\", \"e15\"]",
+    "BIO_tags": "[\"O\", \"O\", \"B-SEAT_TYPE\", \"O\", \"O\", \"B-SEAT_NUMBER\"]"
+  },
+  {
+    "sentence": "uh um please buk me 3 for kalki 2898 ad at 11 : 30 am now",
+    "intent": "book_ticket",
+    "tokens": "[\"uh\", \"um\", \"please\", \"buk\", \"me\", \"3\", \"for\", \"kalki\", \"2898\", \"ad\", \"at\", \"11\", \":\", \"30\", \"am\", \"now\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"B-NUM_TICKETS\", \"O\", \"B-MOVIE_NAME\", \"I-MOVIE_NAME\", \"I-MOVIE_NAME\", \"O\", \"B-TIME\", \"I-TIME\", \"I-TIME\", \"I-TIME\"]"
+  },
+  {
+    "sentence": "can u um dro my reservation at cannival city mall",
+    "intent": "cancel_ticket",
+    "tokens": "[\"can u\", \"um\", \"dro\", \"my\", \"reservation\", \"at\", \"cannival\", \"city\", \"mall\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"O\", \"B-THEATER_NAME\", \"I-THEATER_NAME\", \"I-THEATER_NAME\"]"
+  },
+  {
+    "sentence": "can u see you later",
+    "intent": "goodbye",
+    "tokens": "[\"can u\", \"see\", \"you\", \"later\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\"]"
+  },
+  {
+    "sentence": "hey quic show me showtime for interstellr on 27 may quick",
+    "intent": "check_showtime",
+    "tokens": "[\"hey\", \"quic\", \"show\", \"me\", \"showtime\", \"for\", \"interstellr\", \"on\", \"27\", \"may\", \"quick\"]",
+    "BIO_tags": "[\"O\", \"O\", \"O\", \"O\", \"B-MOVIE_NAME\", \"O\", \"B-DATE\", \"I-DATE\"]"
+  },
+  {
+    "sentence": "hey ther",
+    "intent": "greeting",
+    "tokens": "[\"hey\", \"ther\"]",
+    "BIO_tags": "[\"O\", \"O\"]"
+  }
+]
